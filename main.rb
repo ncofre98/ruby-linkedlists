@@ -7,3 +7,4 @@ ll.append('B')
 ll.append('C')
 ll.prepend('Test')
 p ll
+p ll.size

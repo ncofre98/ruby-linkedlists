@@ -1,5 +1,5 @@
 class LinkedList
-  attr_accessor :head
+  attr_accessor :head, :tail, :size
   
   def initialize
     @head = nil
@@ -26,5 +26,16 @@ class LinkedList
       node.next_node = self.head
       self.head = node
     end
+  end
+
+  def size
+    return 0 if head.nil?
+    size = 1
+    current = head
+    while !current.next_node.nil?
+      size += 1
+      current = current.next_node
+    end
+    size
   end
 end
