@@ -38,4 +38,13 @@ class LinkedList
     end
     size
   end
+
+  def tail
+    return nil if head.nil?
+    current = head
+    while !current.next_node.nil?
+      current = current.next_node
+    end
+    current
+  end
 end

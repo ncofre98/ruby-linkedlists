@@ -6,5 +6,11 @@ ll.append('A')
 ll.append('B')
 ll.append('C')
 ll.prepend('Test')
+
+
 p ll
 p ll.size
+p ll.tail
+
+ll.append('Last')
+p ll.tail
