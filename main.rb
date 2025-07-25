@@ -5,4 +5,5 @@ ll = LinkedList.new
 ll.append('A')
 ll.append('B')
 ll.append('C')
+ll.prepend('Test')
 p ll

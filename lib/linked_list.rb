@@ -17,4 +17,14 @@ class LinkedList
       current.next_node = node
     end
   end
+
+  def prepend(value)
+    node = Node.new(value)
+    if head.nil?
+      self.head = node
+    else
+      node.next_node = self.head
+      self.head = node
+    end
+  end
 end
