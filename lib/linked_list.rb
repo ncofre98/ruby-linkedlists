@@ -11,7 +11,7 @@ class LinkedList
       self.head = node
     else
       current = head
-      while !current.next_node.nil?
+      while current.next_node
         current = current.next_node
       end
       current.next_node = node
@@ -32,7 +32,7 @@ class LinkedList
     return 0 if head.nil?
     size = 1
     current = head
-    while !current.next_node.nil?
+    while current.next_node
       size += 1
       current = current.next_node
     end
@@ -42,8 +42,17 @@ class LinkedList
   def tail
     return nil if head.nil?
     current = head
-    while !current.next_node.nil?
+    while current.next_node
       current = current.next_node
+    end
+    current
+  end
+
+  def at(index)
+    current = head
+    while current.next_node && index != 0
+      current = current.next_node
+      index -= 1
     end
     current
   end
