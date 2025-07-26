@@ -17,6 +17,4 @@ puts "The last one tail is:"
 p ll.tail
 =end
 
-p ll.at(0)
-p ll.at(1)
-p ll.at(2)
+p ll.at(ll.size - 1)
