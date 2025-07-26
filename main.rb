@@ -6,6 +6,9 @@ ll.append('A')
 ll.append('B')
 #ll.append('C')
 ll.prepend('Test')
+ll.append('C')
+ll.append('D')
+ll.append('Rosa')
 
 =begin
 p ll
@@ -17,7 +20,10 @@ puts "The last one tail is:"
 p ll.tail
 =end
 
-p ll
-p ll.find('Test')
+puts ll
+puts ll.find('Test')
 ll.pop
-p ll.find('B')
+puts ll.find('B')
+puts ll
+ll.prepend('Rosita Spain')
+puts ll
