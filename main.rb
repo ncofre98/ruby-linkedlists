@@ -18,5 +18,6 @@ p ll.tail
 =end
 
 p ll
+p ll.find('Test')
 ll.pop
-p ll
+p ll.find('B')
