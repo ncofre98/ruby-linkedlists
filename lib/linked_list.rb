@@ -54,7 +54,19 @@ class LinkedList
       current = current.next_node
       index -= 1
     end
-    #If index is bigger than the list size - 1, nil is returned
+    #If index is bigger than the list's size - 1, nil is returned
     index != 0 ? nil : current
+  end
+
+  def pop
+    if !head || !head.next_node
+      self.head = nil
+      return
+    end
+    current = head
+    while current.next_node.next_node
+      current = current.next_node
+    end
+    current.next_node = nil
   end
 end

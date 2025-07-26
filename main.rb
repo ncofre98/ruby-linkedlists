@@ -4,7 +4,7 @@ require_relative 'lib/linked_list'
 ll = LinkedList.new
 ll.append('A')
 ll.append('B')
-ll.append('C')
+#ll.append('C')
 ll.prepend('Test')
 
 =begin
@@ -17,4 +17,6 @@ puts "The last one tail is:"
 p ll.tail
 =end
 
-p ll.at(ll.size - 1)
+p ll
+ll.pop
+p ll
