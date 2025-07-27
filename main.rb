@@ -1,29 +1,14 @@
 require_relative 'lib/node'
 require_relative 'lib/linked_list'
 
-ll = LinkedList.new
-ll.append('A')
-ll.append('B')
-#ll.append('C')
-ll.prepend('Test')
-ll.append('C')
-ll.append('D')
-ll.append('Rosa')
+list = LinkedList.new
 
-=begin
-p ll
-p ll.size
-p ll.tail
+list.append('dog')
+list.append('cat')
+list.append('parrot')
+list.append('hamster')
+list.append('snake')
+list.append('turtle')
+list.insert_at('Néstor', 100)
 
-ll.append('Last')
-puts "The last one tail is:"
-p ll.tail
-=end
-
-puts ll
-puts ll.find('Test')
-ll.pop
-puts ll.find('B')
-puts ll
-ll.prepend('Rosita Spain')
-puts ll
+puts list

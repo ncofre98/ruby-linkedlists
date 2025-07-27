@@ -100,4 +100,23 @@ class LinkedList
     string += "nil"
     string
   end
+
+  #Extra credit
+  def insert_at(value, index)
+    if index == 0
+      prepend(value)
+    else
+      node = Node.new(value)
+      current = head
+      while current
+        index -= 1
+        if index == 0
+          node.next_node = current.next_node
+          current.next_node = node
+          return
+        end
+        current = current.next_node
+      end
+    end
+  end
 end
