@@ -9,6 +9,8 @@ list.append('parrot')
 list.append('hamster')
 list.append('snake')
 list.append('turtle')
-list.insert_at('Néstor', 100)
+list.insert_at('Néstor', 0)
+puts list
+list.remove_at(300)
 
 puts list

@@ -119,4 +119,20 @@ class LinkedList
       end
     end
   end
+
+  def remove_at(index)
+    if index == 0
+      self.head = head.next_node
+      return
+    end
+    current = head
+    while current
+      index -= 1
+      if index == 0
+        current.next_node = current.next_node.next_node if !current.next_node.nil?
+        return
+      end
+      current = current.next_node
+    end
+  end
 end
